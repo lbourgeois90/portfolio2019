@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+}
+.landingPageWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "name pic aboutme"
+    "skills skills aboutme"
+}
+
+.picDiv{
+    display: grid;
+    grid-area: pic;
+    text-align: center;
+}
+
+.skillsDiv{
+    color: white;
+    display: grid;
+    grid-area: skills;
+
+}
+
+.skillsDiv h1{
+    text-align: center;
+    font-size: 36px;
+
+}
+
+#helloText{
+    font-family: 'Pacifico';
+    font-size: 50px;
+    color: #5CDB95;
+    text-align:
+}
+.skillsDiv ul > li{
+    display: inline-block;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size:18px;
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+.aboutMeDiv{
+    color: white;
+    font-family: 'Oswald';
+    font-size: 28px;
+}
+
+.nameDiv{
+    display: grid;
+    grid-area: name;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+.nameDiv h1{
+    color: white;
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 10px;
+}
+
+.meetH1{
+   font-family: 'Source Serif Pro', serif;
+}
+
+.liliH1{
+    font-family: 'Source Serif Pro', serif;
+}

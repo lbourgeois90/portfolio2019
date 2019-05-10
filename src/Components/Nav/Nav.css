@@ -1,0 +1,41 @@
+.nav {
+    display: table;
+    height: 87px;
+    width: 100%;
+}
+
+nav{
+    display:grid;
+    grid-area: nav;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #66FCF1;
+    font-weight: bold;
+    font-family: 'Oswald';
+    font-size: 36px;
+
+}
+
+.nav li {
+    display: table-cell;
+    height: 100px;
+    width: 25%;  /* (100 / numItems)% */
+    line-height: 87px;
+    text-align: center;
+    background: black;
+    white-space: nowrap;
+}
+nav ul li a:hover {
+    color:#C4073F;
+    font-weight:bold;
+}
+
+
+@media (max-width: 500px) {
+    .nav li {
+        display: block;
+        width: 100%;
+    }
+}
