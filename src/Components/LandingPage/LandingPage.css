@@ -3,11 +3,11 @@ body{
 }
 .landingPageWrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: repeat(2, 1fr);
     grid-template-areas:
-    "name pic aboutme"
-    "skills skills aboutme"
+    "name pic"
+    "aboutme contact"
 }
 
 .picDiv{
@@ -16,46 +16,21 @@ body{
     text-align: center;
 }
 
-.skillsDiv{
-    color: white;
-    display: grid;
-    grid-area: skills;
-
-}
-
-.skillsDiv h1{
-    text-align: center;
-    font-size: 36px;
-
-}
-
-#helloText{
-    font-family: 'Pacifico';
-    font-size: 50px;
-    color: #5CDB95;
-    text-align:
-}
-.skillsDiv ul > li{
-    display: inline-block;
-    margin-right: 25px;
-    font-weight: bold;
-    font-size:18px;
-    color: white;
-    margin-bottom: 5px;
-
-}
-
 .aboutMeDiv{
+    display: grid;
+    grid-area: aboutme;
     color: white;
     font-family: 'Oswald';
     font-size: 28px;
+    text-align: left;
+    margin-left: 100px;
 }
 
 .nameDiv{
     display: grid;
     grid-area: name;
     text-align: left;
-    margin-top: 100px;
+    margin-top: 75px;
     margin-left: 100px;
 }
 
@@ -70,8 +45,189 @@ body{
 
 .meetH1{
    font-family: 'Source Serif Pro', serif;
+   overflow: hidden;
+   white-space: no-wrap;
+   /* border-right: 5px solid orange; */
+   animation: 
+        typing 3.5s steps(40, end),
+        blinking-cursor .5s step-end infinite;
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* @keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  } */
 
 .liliH1{
     font-family: 'Source Serif Pro', serif;
 }
+/* #helloText{
+    font-family: 'Pacifico';
+    font-size: 50px;
+    color: #5CDB95;
+    margin: 0;
+    animation: Hello-Text 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+} */
+
+/* @keyframes Hello-Text {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 25px,25px); }
+ 
+  }
+
+  @keyframes Chat-Text {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 25px,25px); }
+ 
+  } */
+
+/* #contactText{
+    font-family: 'Pacifico';
+    font-size: 50px;
+    color: #FD4531;
+    margin-left: 50px;
+    margin-top: 0;
+    animation: Hello-Text 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+} */
+
+.aboutMeDiv p {
+    margin: 0;
+    animation: 
+    typing 3.5s steps(40, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+#animatedHello {
+    font-family: 'Pacifico';
+    cursor: default;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  
+ #animatedHello span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 0.5s ease infinite alternate;
+    animation-iteration-count:10;
+    font-size: 55px;
+    color: #5CDB95;
+  }
+  
+  #animatedHello span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  #animatedHello span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  #animatedHello span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  #animatedHello span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  
+  /* ANIMATION */
+  @keyframes bounce {
+    100% {
+      top: -20px;
+    }
+  }
+  
+  #animatedContact {
+    font-family: 'Pacifico';
+    cursor: default;
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  
+ #animatedContact span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 0.5s ease infinite alternate;
+    animation-iteration-count:10;
+    font-size: 55px;
+    color: #FD4531;
+  }
+  
+  #animatedContact span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  #animatedContact span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  #animatedContact span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  #animatedContact span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  #animatedContact span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  #animatedContact span:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  
+  
+  /* ANIMATION */
+  @keyframes bounce {
+    100% {
+      top: -20px;
+    }
+  }
+
+  .contactDiv{
+      grid-area: contact;
+      text-align: center;
+  }
+  .contactDiv a {
+      margin: 50px;
+      font-family: 'Pacifico'
+  }
+
+
+  .aboutMeDiv a:link {
+    color: #C4073F;
+  }
+  
+  /* visited link */
+  .aboutMeDiv a:visited {
+    color: #C4073F;
+  }
+  
+  /* mouse over link */
+  .aboutMeDiv a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  .aboutMeDiv a:active {
+    color: #C4073F;
+  }
+
+  .contactDiv img{
+      margin-top: 50px;
+  }

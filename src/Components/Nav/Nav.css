@@ -7,6 +7,7 @@
 nav{
     display:grid;
     grid-area: nav;
+    height: 75px;
 }
 
 nav ul li a {
@@ -17,12 +18,14 @@ nav ul li a {
     font-size: 36px;
 
 }
-
+.nav{
+    margin-bottom: 0;
+}
 .nav li {
     display: table-cell;
-    height: 100px;
-    width: 25%;  /* (100 / numItems)% */
-    line-height: 87px;
+    height: 75px;
+    width: 33.33%;  /* (100 / numItems)% */
+    line-height: 75px;
     text-align: center;
     background: black;
     white-space: nowrap;
