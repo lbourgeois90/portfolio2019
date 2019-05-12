@@ -8,6 +8,7 @@ nav{
     display:grid;
     grid-area: nav;
     height: 75px;
+    background-color: black;
 }
 
 nav ul li a {

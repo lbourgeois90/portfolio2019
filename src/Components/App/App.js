@@ -5,9 +5,11 @@ import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
 import Resume from '../Resume/Resume';
 import Nav from '../Nav/Nav';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 
 function App() {
   return (
+    <MuiThemeProvider>
     <Router>
       <div className="App">
       <Nav/>
@@ -20,6 +22,7 @@ function App() {
          
       </div>
     </Router>
+    </MuiThemeProvider>
   );
 }
 
