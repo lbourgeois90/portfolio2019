@@ -29,9 +29,9 @@ const tutorialSteps = [
       '/images/feedback.mp4',
   },
   {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+    label: 'Creature of Harry Potter Gallery',
     imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60',
+      '/images/gallery.mp4',
   },
   {
     label: 'Goč, Serbia',
