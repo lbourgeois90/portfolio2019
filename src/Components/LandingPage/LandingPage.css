@@ -121,7 +121,7 @@ body{
     top: 20px;
     display: inline-block;
     animation: bounce 0.5s ease infinite alternate;
-    animation-iteration-count:10;
+    animation-iteration-count:4;
     font-size: 55px;
     color: #5CDB95;
   }
@@ -164,7 +164,7 @@ body{
     top: 20px;
     display: inline-block;
     animation: bounce 0.5s ease infinite alternate;
-    animation-iteration-count:10;
+    animation-iteration-count:4;
     font-size: 55px;
     color: #FD4531;
   }

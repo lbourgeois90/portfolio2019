@@ -7,37 +7,40 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+import Link from '@material-ui/core/Link';
 import './Portfolio.css'
 
 
 const tutorialSteps = [
   {
     label: 'ActivatEd: Educational Content Distribution Application',
+    githubLink: 'https://github.com/lbourgeois90/activated',
     imgPath:
       '/images/createAnActivatorDemo.mov',
   },
   {
     label: 'Server Side Calculator',
+    githubLink: 'https://github.com/lbourgeois90/serversidecalculator',
     imgPath:
       '/images/ServiceSideCalculatorDemo.mov',
   },
   {
     label: 'Feedback Form',
+    githubLink: 'https://github.com/lbourgeois90/redux-feedback',
     imgPath:
       '/images/feedback.mp4',
   },
   {
     label: 'Creature of Harry Potter Gallery',
+    githubLink: 'https://github.com/lbourgeois90/react-gallery-items',
     imgPath:
       '/images/gallery.mp4',
   },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-  },
+  // {
+  //   label: 'Goč, Serbia',
+  //   imgPath:
+  //     'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+  // },
 ];
 
 const styles = theme => ({
@@ -72,6 +75,12 @@ const styles = theme => ({
   buttons:{
     color: '#66FCF1',
   },
+  link:{
+    color: '#FD4531',
+    fontSize: 28,
+    textDecoration: 'none',
+    fontFamily: 'Oswald',
+  }
 
   
 });
@@ -111,7 +120,9 @@ class Portfolio extends Component {
           src={tutorialSteps[activeStep].imgPath}
           alt={tutorialSteps[activeStep].label}/>
         </video> */}
-
+        <a href={tutorialSteps[activeStep].githubLink} target="_blank" className={classes.link}>See Github Repo</a>
+        <br/>
+        <br/>
         <video className={classes.img}
           src={tutorialSteps[activeStep].imgPath}
           alt={tutorialSteps[activeStep].label}
@@ -120,6 +131,7 @@ class Portfolio extends Component {
           loop="" 
           muted="">
            </video>
+        
         {/* <img
           className={classes.img}
           src={tutorialSteps[activeStep].imgPath}
