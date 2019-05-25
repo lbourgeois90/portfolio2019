@@ -18,12 +18,12 @@ const styles = theme => ({
     marginTop: 50,
   },
   expansion:{
-      backgroundColor: 'black',
+      backgroundColor: 'white',
   },
   heading: {
     flexBasis: '33.33%',
     flexShrink: 0,
-    color: '#C4073F',
+    color: '#192231',
     fontFamily: 'Oswald',
     fontSize: 20,
   },
@@ -34,28 +34,28 @@ const styles = theme => ({
     fontSize: 20
   },
   header:{
-      color: '#FD4531',
+      color: '#DCAE1D',
       fontSize: 24,
   },
   nameHeader:{
-    color: '#736396',
+    color: '#192231',
     fontSize: 30,
   },
   expandMore:{
-      color: '#C4073F'
+      color: '#192231'
   },
   typographySummary:{
-      color: 'rgb(255,255,255, 0.5)',
+      color: '#192231',
       fontSize: 18,
       fontFamily: 'Source Serif Pro',
   },
   typographyDate:{
-    color: 'rgb(255,255,255, 0.6)',
+    color: '#7690B8',
     fontFamily: 'Oswald',
     fontSize: 20,
   },
   skillsList:{
-    color: 'rgb(255,255,255, 0.6)',
+    color: '#192231',
     display: 'table',
     width: '100%',
   },
@@ -66,7 +66,7 @@ const styles = theme => ({
   },
 
   certList:{
-    color: 'rgb(255,255,255, 0.6)',
+    color: '#192231',
     display: 'table',
     width: '100%',
   },

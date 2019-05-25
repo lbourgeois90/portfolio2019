@@ -1,29 +1,39 @@
 body{
-    background-color: black;
+    background-color:white;
 }
 .landingPageWrapper{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: repeat(2, 1fr);
     grid-template-areas:
-    "name pic"
-    "aboutme contact"
+    "name aboutme"
+    "pic contact"
 }
 
 .picDiv{
     display: grid;
     grid-area: pic;
     text-align: center;
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
+    
 }
+
+
+
+
 
 .aboutMeDiv{
     display: grid;
     grid-area: aboutme;
-    color: white;
+    color: #192231;
     font-family: 'Oswald';
     font-size: 28px;
     text-align: left;
     margin-left: 100px;
+    margin-top: 75px;
 }
 
 .nameDiv{
@@ -36,7 +46,7 @@ body{
 
 
 .nameDiv h1{
-    color: white;
+    color: #192231;
     font-size: 150px;
     margin: 0;
     padding: 0;
@@ -47,6 +57,7 @@ body{
    font-family: 'Source Serif Pro', serif;
    overflow: hidden;
    white-space: no-wrap;
+   float: left;
    /* border-right: 5px solid orange; */
    animation: 
         typing 3.5s steps(40, end),
@@ -103,17 +114,36 @@ body{
 
 .aboutMeDiv p {
     margin: 0;
-    animation: 
+    /* animation: 
     typing 3.5s steps(40, end),
-    blinking-cursor .5s step-end infinite;
+    blinking-cursor .5s step-end infinite; */
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 #animatedHello {
-    font-family: 'Pacifico';
+    font-family: 'Oswald';
     cursor: default;
     width: 100%;
     margin: auto;
     display: block;
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    letter-spacing: 100;
+    margin-bottom: 25px;
   }
   
  #animatedHello span {
@@ -121,9 +151,9 @@ body{
     top: 20px;
     display: inline-block;
     animation: bounce 0.5s ease infinite alternate;
-    animation-iteration-count:4;
+    animation-iteration-count:10;
     font-size: 55px;
-    color: #5CDB95;
+    color: #192231;
   }
   
   #animatedHello span:nth-child(2) {
@@ -151,12 +181,16 @@ body{
   }
   
   #animatedContact {
-    font-family: 'Pacifico';
+   font-family: 'Oswald';
     cursor: default;
     width: 100%;
     margin: auto;
     display: block;
-    text-align: center;
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    letter-spacing: 100;
+    margin-bottom: 25px;
   }
   
  #animatedContact span {
@@ -164,9 +198,9 @@ body{
     top: 20px;
     display: inline-block;
     animation: bounce 0.5s ease infinite alternate;
-    animation-iteration-count:4;
+    animation-iteration-count:10;
     font-size: 55px;
-    color: #FD4531;
+    color: #192231;
   }
   
   #animatedContact span:nth-child(2) {
@@ -200,34 +234,51 @@ body{
   }
 
   .contactDiv{
-      grid-area: contact;
-      text-align: center;
+    display: inline;
+    grid-area: contact;
+    color: #192231;
+    font-family: 'Oswald';
+    font-size: 28px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 75px;
+
+      
   }
   .contactDiv a {
-      margin: 50px;
-      font-family: 'Pacifico'
+      margin-top: 50px;
+      margin-right: 50px;
+      font-family: 'Pacifico';
+      animation: 15s fadeIn;
+      animation-fill-mode: forwards;
+      
+      visibility: hidden;
   }
 
 
   .aboutMeDiv a:link {
-    color: #C4073F;
+    color: #DCAE1D;
   }
   
   /* visited link */
   .aboutMeDiv a:visited {
-    color: #C4073F;
+    color: #DCAE1D;
   }
   
   /* mouse over link */
   .aboutMeDiv a:hover {
-    color: white;
+    color: #192231;
   }
   
   /* selected link */
   .aboutMeDiv a:active {
-    color: #C4073F;
+    color: #DCAE1D;
   }
 
   .contactDiv img{
       margin-top: 50px;
+  }
+
+  .iconLink{
+    text-align: left;
   }

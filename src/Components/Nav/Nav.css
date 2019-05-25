@@ -1,19 +1,18 @@
 .nav {
     display: table;
     height: 87px;
-    width: 100%;
 }
 
 nav{
     display:grid;
     grid-area: nav;
     height: 75px;
-    background-color: black;
+    background-color: white;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #66FCF1;
+    color: #192231;
     font-weight: bold;
     font-family: 'Oswald';
     font-size: 36px;
@@ -28,11 +27,11 @@ nav ul li a {
     width: 33.33%;  /* (100 / numItems)% */
     line-height: 75px;
     text-align: center;
-    background: black;
+    background: white;
     white-space: nowrap;
 }
 nav ul li a:hover {
-    color:#C4073F;
+    color:#DCAE1D;
     font-weight:bold;
 }
 
@@ -42,4 +41,8 @@ nav ul li a:hover {
         display: block;
         width: 100%;
     }
+}
+
+.icon{
+    color: #DCAE1D;
 }

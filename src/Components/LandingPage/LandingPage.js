@@ -18,11 +18,12 @@ class LandingPage extends Component {
 
         <div className="nameDiv">
             <h1 className="meetH1">Meet
-            <br/> Lili</h1>
+            <br/> Lili
+            </h1>
         </div>
 
         <div className="picDiv">
-            <p><img src="/images/teacher_outline.png"></img></p>
+            {/* <p><img src="/images/teacher_outline.png"></img></p> */}
         </div>
 
         <div className="aboutMeDiv">
@@ -33,12 +34,12 @@ class LandingPage extends Component {
                 <span>L</span>
                 <span>O</span>
             </h1>
-            <p><Face/> People call me Lili.</p>
-            <p><School/> I am currently studying Full Stack Software Engineering at Prime Digital Academy.</p>
-            <p><Favorite/> I used to be a high school teacher.</p>
-            <p><LaptopMac/> Now I type letters and numbers to "write" code.</p>
-            <p><LocalFlorist/> I like when things are pretty.</p>
-            <p><MoreHoriz/> Learn more about <a href="/#/resume">Me</a></p> 
+            <p><Face className='icon'/> You can call me Lili.</p>
+            <p><School className='icon'/> I am currently studying Full Stack Software Engineering at Prime Digital Academy.</p>
+            <p><Favorite className='icon'/> I used to be a high school teacher.</p>
+            <p><LaptopMac className='icon'/> Now I type letters and numbers to "write" code.</p>
+            <p><LocalFlorist className='icon'/> I like when things are pretty.</p>
+            <p><MoreHoriz className='icon'/> Learn more about <a href="/#/resume">Me</a></p> 
  
         </div>
 

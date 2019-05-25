@@ -17,24 +17,80 @@ const tutorialSteps = [
     githubLink: 'https://github.com/lbourgeois90/activated',
     imgPath:
       '/images/createAnActivatorDemo.mov',
+    technologies: 
+    <ul className="techList">
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Material-UI</li>
+      <li>CSS</li>
+      <li>Axios</li>
+      <li>Express</li>
+      <li>Moment.js</li>
+      <li>Passport</li>
+      <li>PostgreSQL</li>
+      <li>React-stepper</li>
+      <li>React-redux</li>
+      <li>Redux-saga</li>
+      <li>Redux-logger</li>
+      <li>Sweetalert</li>
+    </ul>
   },
   {
     label: 'Server Side Calculator',
     githubLink: 'https://github.com/lbourgeois90/serversidecalculator',
     imgPath:
       '/images/ServiceSideCalculatorDemo.mov',
+    technologies: 
+    <ul className="techList">
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>Ajax</li>
+      <li>Node.js</li>
+      <li>CSS</li>
+      <li>Express</li>
+  </ul>
   },
   {
     label: 'Feedback Form',
     githubLink: 'https://github.com/lbourgeois90/redux-feedback',
     imgPath:
       '/images/feedback.mp4',
+      technologies: 
+      <ul className="techList">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Axios</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>PostgreSQL</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>React-redux</li>
+        <li>Redux-logger</li>
+        <li>React-router</li>
+        <li>React-stepper</li>
+        <li>Sweetalert</li>
+
+    </ul>
   },
   {
     label: 'Creature of Harry Potter Gallery',
     githubLink: 'https://github.com/lbourgeois90/react-gallery-items',
     imgPath:
       '/images/gallery.mp4',
+      technologies: 
+      <ul className="techList">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Axios</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>PostgreSQL</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+
+    </ul>
   },
   // {
   //   label: 'Goč, Serbia',
@@ -53,7 +109,7 @@ const styles = theme => ({
   },
   header: {
     height: 100,
-    backgroundColor: 'black',
+    backgroundColor: 'white',
     textAlign: 'center',
     margin: '0 auto',
     marginTop: 50
@@ -67,20 +123,23 @@ const styles = theme => ({
     margin: '0 auto',
   },
   mobileStepper:{
-    backgroundColor: 'black',
-    color:'#66FCF1',
+    backgroundColor: 'white',
+    color:'#192231',
     width: '80%',
     margin: '0 auto',
   },
   buttons:{
-    color: '#66FCF1',
+    color: '#192231',
   },
   link:{
-    color: '#FD4531',
+    color: '#7690B8',
     fontSize: 28,
     textDecoration: 'none',
     fontFamily: 'Oswald',
-  }
+  },
+  technologies:{
+    color: '192231',
+  },
 
   
 });
@@ -113,13 +172,15 @@ class Portfolio extends Component {
     return (
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography style={{color: '#C4073F', fontSize: 36, fontFamily: 'Oswald'}}>{tutorialSteps[activeStep].label}</Typography>
+          <Typography style={{color: '#DCAE1D', fontSize: 36, fontFamily: 'Oswald'}}>{tutorialSteps[activeStep].label}</Typography>
         </Paper>
         {/* <video autoplay="" loop="" muted="" data-reactid=".0.1.0.0" height="400px">
           <source type="video/mp4" data-reactid=".0.1.0.0.0" className={classes.img}
           src={tutorialSteps[activeStep].imgPath}
           alt={tutorialSteps[activeStep].label}/>
         </video> */}
+        <Typography style={{color: '#192231', fontSize: 28, fontFamily: 'Oswald'}}>Technologies Used:</Typography>
+        <p className={classes.technologies}>{tutorialSteps[activeStep].technologies}</p>
         <a href={tutorialSteps[activeStep].githubLink} target="_blank" className={classes.link}>See Github Repo</a>
         <br/>
         <br/>
