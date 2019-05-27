@@ -40,7 +40,7 @@ const tutorialSteps = [
     label: 'Server Side Calculator',
     githubLink: 'https://github.com/lbourgeois90/serversidecalculator',
     imgPath:
-      '/portfolio2019/images/ServiceSideCalculatorDemo.mov',
+      '/portfolio2019/images/serviceSideCalculatorDemo.mov',
     technologies: 
     <ul className="techList">
       <li>JavaScript</li>
