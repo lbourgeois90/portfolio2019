@@ -16,7 +16,7 @@ const tutorialSteps = [
     label: 'ActivatEd: Educational Content Distribution Application',
     githubLink: 'https://github.com/lbourgeois90/activated',
     imgPath:
-      '/portfolio2019//images/createAnActivatorDemo.mov',
+      '/portfolio2019/images/createAnActivatorDemo.mov',
     technologies: 
     <ul className="techList">
       <li>JavaScript</li>
@@ -40,7 +40,7 @@ const tutorialSteps = [
     label: 'Server Side Calculator',
     githubLink: 'https://github.com/lbourgeois90/serversidecalculator',
     imgPath:
-      '/portfolio2019//images/ServiceSideCalculatorDemo.mov',
+      '/portfolio2019/images/ServiceSideCalculatorDemo.mov',
     technologies: 
     <ul className="techList">
       <li>JavaScript</li>
@@ -55,7 +55,7 @@ const tutorialSteps = [
     label: 'Feedback Form',
     githubLink: 'https://github.com/lbourgeois90/redux-feedback',
     imgPath:
-      '/portfolio2019//images/feedback.mp4',
+      '/portfolio2019/images/feedback.mp4',
       technologies: 
       <ul className="techList">
         <li>JavaScript</li>
@@ -78,7 +78,7 @@ const tutorialSteps = [
     label: 'Creature of Harry Potter Gallery',
     githubLink: 'https://github.com/lbourgeois90/react-gallery-items',
     imgPath:
-      '/portfolio2019//images/gallery.mp4',
+      '/portfolio2019/images/gallery.mp4',
       technologies: 
       <ul className="techList">
         <li>JavaScript</li>
@@ -187,7 +187,10 @@ class Portfolio extends Component {
         <video className={classes.img}
           src={tutorialSteps[activeStep].imgPath}
           alt={tutorialSteps[activeStep].label}
-          type="video/mp4">
+          type="video/mp4"
+          autoplay="" 
+          loop="" 
+          muted="">>
            </video>
         
         {/* <img
