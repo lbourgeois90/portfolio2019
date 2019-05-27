@@ -188,9 +188,8 @@ class Portfolio extends Component {
           src={tutorialSteps[activeStep].imgPath}
           alt={tutorialSteps[activeStep].label}
           type="video/mp4"
-          autoplay="" 
-          loop="" 
-          muted="">
+         controls
+         preload>
            </video>
         
         {/* <img
