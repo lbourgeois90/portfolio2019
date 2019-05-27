@@ -53,9 +53,9 @@ class LandingPage extends Component {
                 <span>C</span>
                 <span>T</span>
             </h1>
-            <a href="https://github.com/lbourgeois90" target="_blank"><img src="/images/githubicon.png"></img></a>
-            <a href="mailto:lbourgeois@gmail.com"><img src="/images/gmailIcon.png"></img></a>
-            <a href="https://www.linkedin.com/in/lili-bourgeois-49947563/" target="_blank"><img src="/images/linkedinicon.png"></img></a>
+            <a href="https://github.com/lbourgeois90" target="_blank"><img src="/portfolio2019/images/githubicon.png"></img></a>
+            <a href="mailto:lbourgeois@gmail.com"><img src="/portfolio2019/images/gmailIcon.png"></img></a>
+            <a href="https://www.linkedin.com/in/lili-bourgeois-49947563/" target="_blank"><img src="/portfolio2019/images/linkedinicon.png"></img></a>
         </div>
          
        </section>
