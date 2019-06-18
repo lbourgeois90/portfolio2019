@@ -218,7 +218,13 @@ class ControlledExpansionPanels extends React.Component {
                         <li>Web based application designed with the ability for educators to build courses, add students to courses, and create course specific activators/Do-Now questions</li>
                         <li>Activators are released for student access at teacher specified start and end time; upon completion of questions, student responses are stored for teachers to access and score via their account</li>
                         <li>ActivatEd is built using the following technologies: HTML, JavaScript, Axios, Express, Node.js, Passport, Pg, React, React-redux, React-saga, Material-UI, CSS, SQL, Moment.js</li>
-                        <h4><i>Group Project: TBD</i></h4>
+                        <h4><i>Group Project: GAP(Good Agricultural Practices) Farmers</i></h4>
+                        <li>Web based mobile-first application designed to assist farmers with record-keeping for compliance with FDA
+                        Good Agricultural Practices(GAP)</li>
+                        <li>Farmers have the ability to create personalized farm specifications which is then used to auto-fill GAP
+                        ActivatEd is built using the following technologies: HTML, JavaScript, Axios, Express, Node.js, Passport, Pg,
+                        React, React-redux, React-saga, Material-UI, CSS, SQL, Moment.js
+                        documentation, increasing usability and providing a single-point of access</li>
 
                     </ul>
                     </Typography>
