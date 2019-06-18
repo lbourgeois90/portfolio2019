@@ -13,8 +13,35 @@ import './Portfolio.css'
 
 const tutorialSteps = [
   {
+    label: 'GAP(Good Agricultural Practices) Farmers',
+    githubLink: 'https://github.com/lbourgeois90/umn-gap',
+    deploymentLink: 'https://glacial-ravine-98721.herokuapp.com/#/home',
+    imgPath:
+      '/portfolio2019/images/UMNGAP.mov',
+    technologies: 
+    <ul className="techList">
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Material-UI</li>
+      <li>CSS</li>
+      <li>Axios</li>
+      <li>Express</li>
+      <li>Moment.js</li>
+      <li>Passport</li>
+      <li>PostgreSQL</li>
+      <li>React-stepper</li>
+      <li>React-redux</li>
+      <li>Redux-saga</li>
+      <li>Redux-logger</li>
+      <li>Sweetalert</li>
+      <li>PDFmake</li>
+    </ul>
+  },
+  {
     label: 'ActivatEd: Educational Content Distribution Application',
     githubLink: 'https://github.com/lbourgeois90/activated',
+    deploymentLink: 'https://fast-stream-15490.herokuapp.com/#/home',
     imgPath:
       '/portfolio2019/images/createAnActivatorDemo.mov',
     technologies: 
@@ -39,6 +66,7 @@ const tutorialSteps = [
   {
     label: 'Server Side Calculator',
     githubLink: 'https://github.com/lbourgeois90/serversidecalculator',
+    deploymentLink: 'https://radiant-basin-74968.herokuapp.com/',
     imgPath:
       '/portfolio2019/images/serviceSideCalculatorDemo.mov',
     technologies: 
@@ -54,6 +82,7 @@ const tutorialSteps = [
   {
     label: 'Feedback Form',
     githubLink: 'https://github.com/lbourgeois90/redux-feedback',
+    deploymentLink: '',
     imgPath:
       '/portfolio2019/images/feedback.mp4',
       technologies: 
@@ -77,6 +106,7 @@ const tutorialSteps = [
   {
     label: 'Creature of Harry Potter Gallery',
     githubLink: 'https://github.com/lbourgeois90/react-gallery-items',
+    deploymentLink: '',
     imgPath:
       '/portfolio2019/images/gallery.mp4',
       technologies: 
@@ -168,6 +198,10 @@ class Portfolio extends Component {
     const { classes, theme } = this.props;
     const { activeStep } = this.state;
     const maxSteps = tutorialSteps.length;
+    let deployLink = null
+    if(tutorialSteps[activeStep].deploymentLink !== ''){
+      deployLink = <a href={tutorialSteps[activeStep].deploymentLink} target="_blank" className={classes.link}>See Deployed App</a>
+    }
 
     return (
       <div className={classes.root}>
@@ -182,6 +216,8 @@ class Portfolio extends Component {
         <Typography style={{color: '#192231', fontSize: 28, fontFamily: 'Oswald'}}>Technologies Used:</Typography>
         <p className={classes.technologies}>{tutorialSteps[activeStep].technologies}</p>
         <a href={tutorialSteps[activeStep].githubLink} target="_blank" className={classes.link}>See Github Repo</a>
+        <br/>
+        {deployLink}
         <br/>
         <br/>
         <video className={classes.img}
